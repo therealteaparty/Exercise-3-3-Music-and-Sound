@@ -74,5 +74,11 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Quit"
 
+[node name="Ball_Sound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Ball2" parent="." instance=ExtResource("4")]
+position = Vector2(760, 560)
+linear_velocity = Vector2(-100, -500)
+
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
